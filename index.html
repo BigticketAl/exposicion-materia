@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exposición: Ferrari F40</title>
+    <style>
+        body { 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            line-height: 1.6; 
+            margin: 0; 
+            padding: 20px; 
+            background-color: #121212; 
+            color: #333;
+        }
+        .contenedor { 
+            max-width: 900px; 
+            margin: 0 auto; 
+            background: #ffffff; 
+            padding: 40px; 
+            border-radius: 8px; 
+            box-shadow: 0 10px 30px rgba(256, 35, 26,0.3);
+            border-top: 8px solid #e2231a;
+        }
+        .datos-materia { 
+            background: #222222;
+            color: #ffffff;
+            padding: 20px; 
+            border-left: 5px solid #fce116; 
+            margin-bottom: 40px; 
+            border-radius: 4px;
+        }
+        .datos-materia h2 { 
+            margin-top: 0; 
+            color: #fce116; 
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border-bottom: none;
+        }
+        .datos-materia p strong {
+            color: #fce116;
+        }
+        h1 {
+            color: #e2231a; 
+            text-align: center;
+            font-size: 2.5em;
+            text-transform: uppercase;
+            border-bottom: 3px solid #e2231a;
+            padding-bottom: 10px;
+            margin-bottom: 30px;
+        }
+        h2 {
+            color: #222222; 
+            border-bottom: 2px solid #ccc; 
+            padding-bottom: 5px;
+            margin-top: 40px;
+        }
+        h3 {
+            color: #e2231a; 
+            margin-top: 25px;
+        }
+        .intro {
+            font-size: 1.1em;
+            font-style: italic;
+            border-left: 4px solid #e2231a;
+            padding-left: 15px;
+            color: #555;
+        }
+        ul {
+            list-style-type: square;
+        }
+        li {
+            margin-bottom: 12px;
+        }
+        li strong {
+            color: #e2231a;
+        }
+
+        /* Estilos de la tabla de rendimiento */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 30px 0;
+            font-size: 1.05em;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        th, td {
+            padding: 15px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background-color: #e2231a;
+            color: white;
+            text-transform: uppercase;
+        }
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        tr:hover {
+            background-color: #f1f1f1;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="contenedor">
+        <!-- SECCIÓN 1: DATOS DE LA MATERIA -->
+        <div class="datos-materia">
+            <h2>Datos Académicos</h2>
+            <p><strong>Materia:</strong> Redes de Computadoras Para el Desarrollo de Software</p>
+            <p><strong>Tema:</strong> Ferrari F40</p>
+            <p><strong>Alumno:</strong> Carlos Alexander Castillo Sosa</p>
+            <p><strong>Docente:</strong> Angelica Perez Hernandez</p>
+        </div>
+        
+        <!-- SECCIÓN 2: TU TEMA DE PREFERENCIA -->
+        <h1>La Historia del Ferrari F40</h1>
+        
+        <p class="intro">El Ferrari F40 es considerado uno de los superdeportivos más icónicos, salvajes y puristas de la historia. Nació como un prototipo de carreras adaptado para la calle, diseñado para transmitir emociones crudas, sin concesiones a la comodidad ni a los lujos modernos.</p>
+        
+        <h2>Origen e Historia</h2>
+        <ul>
+            <li><strong>El hito:</strong> Se presentó en 1987 con el objetivo de celebrar el 40º aniversario de la fundación de la marca italiana.</li>
+            <li><strong>El último de Enzo:</strong> Fue el último automóvil cuyo desarrollo fue sugerido, supervisado y aprobado personalmente por el legendario Enzo Ferrari antes de su fallecimiento.</li>
+            <li><strong>Desarrollo exprés:</strong> Basado en el prototipo 288 GTO Evoluzione, el F40 fue diseñado, probado y construido bajo un secretismo absoluto en un tiempo récord de apenas 13 meses.</li>
+        </ul>
+
+        <h2>Construcción y Diseño</h2>
+        <ul>
+            <li><strong>Materiales de grado aeroespacial:</strong> Diseñado por el estudio Pininfarina (bajo la pluma de Pietro Camardella y Leonardo Fioravanti), utilizó un chasis tubular de acero envuelto en una carrocería construida con paneles de Kevlar, fibra de carbono y aluminio.</li>
+            <li><strong>Ultra ligero:</strong> Gracias a la obsesión por eliminar peso, incluyendo un interior completamente espartano, el vehículo paraba la báscula en apenas 1,100 kg en seco (2,425 libras).</li>
+            <li><strong>Experiencia sin filtros:</strong> Para maximizar la conexión entre el piloto y el asfalto, carecía por completo de ayudas a la conducción: no tenía dirección asistida, frenos ABS, ni control de tracción.</li>
+        </ul>
+
+        <h2>Versiones: Manual, Automático y Ediciones Especiales</h2>
+        <p>Ferrari planeaba producir unas 400 unidades, pero la enorme demanda elevó la producción a un total aproximado de 1,311 unidades. Originalmente, el 100% de los autos salían de fábrica en rojo (Rosso Corsa), con el volante a la izquierda y transmisión manual de 5 velocidades.</p>
+        
+        <ul>
+            <li><strong>El único F40 "Automático":</strong> Gianni Agnelli, el entonces presidente del Grupo Fiat, sufría de una antigua lesión en la pierna izquierda que le impedía accionar el duro embrague de un superdeportivo. Ferrari fabricó para él una unidad exclusiva (Chasis 79883) equipada con un sistema automatizado Valeo. El embrague electrónico se accionaba mágicamente con tan solo mover la palanca de cambios manual, permitiendo manejar sin el tercer pedal.</li>
+            <li><strong>Las rarezas del Sultán de Brunéi:</strong> Pininfarina accedió a modificar al menos siete unidades para la familia real de Brunéi. Estos F40 fueron los únicos con el volante a la derecha de fábrica y se pintaron en colores fuera de catálogo (negro, gris, azul, amarillo). Además, incorporaron lujos impensables para un F40 normal, como asientos de cuero y sistemas de aire acondicionado mejorados.</li>
+        </ul>
+
+        <h3>Versiones de Competición</h3>
+        <ul>
+            <li><strong>F40 LM (Le Mans) / Competizione:</strong> Modificados para circuito, con la potencia elevada a unos 700 CV, perdiendo aún más peso. Solo se construyeron 19 unidades.</li>
+            <li><strong>F40 GT y GTE:</strong> Evoluciones brutales para los campeonatos de Gran Turismo. El F40 GTE generaba tanto torque y era tan veloz que logró vencer al más moderno McLaren F1 GTR en carreras bajo la lluvia.</li>
+        </ul>
+
+        <h2>Famosos dueños del F40</h2>
+        <ul>
+            <li><strong>Nigel Mansell:</strong> El campeón mundial de Fórmula 1 compró una unidad y la vendió en 1990 por la cifra récord de 1 millón de libras esterlinas.</li>
+            <li><strong>Michele Alboreto:</strong> Histórico piloto italiano de F1 que ayudó a probar y popularizar el coche.</li>
+            <li><strong>Gianni Agnelli:</strong> Dueño de Fiat y de la unidad especial con embrague Valeo.</li>
+            <li><strong>Ian James Poulter:</strong> El famoso golfista británico y coleccionista de Ferrari, quien adquirió uno en 2013.</li>
+        </ul>
+
+        <h2>Datos Técnicos y Rendimiento</h2>
+        <p>El F40 cimentó su estatus de leyenda al convertirse en el primer coche de producción en romper la barrera de las 200 mph (320 km/h).</p>
+        
+        <table>
+            <thead>
+                <tr>
+                    <th>Especificación</th>
+                    <th>Detalle</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Motor</strong></td>
+                    <td>V8 a 90º de 2.9 litros (2936 cm³) biturbo en posición central longitudinal</td>
+                </tr>
+                <tr>
+                    <td><strong>Potencia Máxima</strong></td>
+                    <td>478 CV (471 HP) a 7,000 rpm</td>
+                </tr>
+                <tr>
+                    <td><strong>Par Máximo</strong></td>
+                    <td>577 Nm (425 lb-ft) a 4,000 rpm</td>
+                </tr>
+                <tr>
+                    <td><strong>Transmisión</strong></td>
+                    <td>Tracción trasera (RWD), manual de 5 velocidades</td>
+                </tr>
+                <tr>
+                    <td><strong>Aceleración (0-100 km/h)</strong></td>
+                    <td>4.1 segundos</td>
+                </tr>
+                <tr>
+                    <td><strong>Velocidad Máxima</strong></td>
+                    <td>324 km/h (201 mph)</td>
+                </tr>
+                <tr>
+                    <td><strong>Peso en Seco</strong></td>
+                    <td>1,100 kg (2,425 lbs)</td>
+                </tr>
+                <tr>
+                    <td><strong>Consumo Medio</strong></td>
+                    <td>12.4 L/100 km (combinado)</td>
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+
+</body>
+</html>
