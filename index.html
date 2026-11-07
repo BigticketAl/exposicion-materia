@@ -10,16 +10,25 @@
             line-height: 1.6; 
             margin: 0; 
             padding: 20px; 
-            background-color: #121212; 
+
+            /* Configuración del fondo */
+            background-image: url('HRRz6LTasAAo7P_.jpg'); /* Pon aquí el nombre exacto de tu imagen */
+            background-size: cover;       /* Hace que la imagen cubra toda la pantalla */
+            background-position: center;  /* Centra la imagen */
+            background-attachment: fixed; /* Hace que el fondo se quede quieto al hacer scroll */
+    
             color: #333;
         }
         .contenedor { 
             max-width: 900px; 
             margin: 0 auto; 
-            background: #ffffff; 
+
+            /* Fondo blanco con ligera transparencia */
+            background: rgba(255, 255, 255, 0.92);
+
             padding: 40px; 
             border-radius: 8px; 
-            box-shadow: 0 10px 30px rgba(256, 35, 26,0.3);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.6); /* Sombra más oscura para resaltar sobre la foto */
             border-top: 8px solid #e2231a;
         }
         .datos-materia { 
@@ -99,6 +108,26 @@
         }
         tr:hover {
             background-color: #f1f1f1;
+        }
+        .galeria {
+            display: flex; /* Acomoda las imágenes en fila */
+            gap: 20px;     /* Espacio entre las imágenes */
+            margin-top: 20px;
+            flex-wrap: wrap; /* Si no caben, las baja a la siguiente línea (ideal para celulares) */
+            justify-content: center;
+        }
+        .galeria img {
+            width: 100%;
+            max-width: 250px; /* Tamaño de cada foto */
+            border-radius: 8px; /* Bordes redondeados */
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2); /* Sombra sutil */
+            object-fit: cover; /* Evita que la imagen se deforme */
+            transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animación suave */
+        }
+        /* Efecto al pasar el mouse por encima */
+        .galeria img:hover {
+            transform: scale(1.05); /* Se hace un poquito más grande */
+            box-shadow: 0 8px 25px rgba(226, 35, 26, 0.4); /* Brillo rojo F40 */
         }
     </style>
 </head>
@@ -200,6 +229,15 @@
                 </tr>
             </tbody>
         </table>
+
+        <!-- NUEVA SECCIÓN DE IMÁGENES -->
+        <h2>Galería del F40</h2>
+        <div class="galeria">
+            <!-- Cambia los nombres por los de tus archivos exactos -->
+            <img src="HWWJ5CFWIAA9dHt.jpg" alt="Ferrari F40 de espaldas">
+            <img src="HWWJ5CEWMAAnoht.jpg" alt="Ferrari F40 lateral">
+            <img src="HRToS9BbsAAo00A.jpg" alt="Ferrari F40 en pista">
+        </div>
 
     </div>
 
