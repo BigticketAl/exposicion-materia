@@ -129,6 +129,38 @@
             transform: scale(1.05); /* Se hace un poquito más grande */
             box-shadow: 0 8px 25px rgba(226, 35, 26, 0.4); /* Brillo rojo F40 */
         }
+        /* Estilos de la sección y botón de descarga */
+        .seccion-descarga {
+            text-align: center;
+            background: #f8f9fa;
+            padding: 30px;
+            border-radius: 8px;
+            margin: 40px 0;
+            border: 2px dashed #ccc;
+        }
+        .seccion-descarga h2 {
+            margin-top: 0;
+            border-bottom: none;
+        }
+        .btn-ferrari {
+            display: inline-block;
+            background-color: #e2231a; /* Rojo Ferrari */
+            color: #ffffff;
+            padding: 12px 25px;
+            text-decoration: none;
+            font-size: 1.1em;
+            font-weight: bold;
+            text-transform: uppercase;
+            border-radius: 5px;
+            margin-top: 15px;
+            transition: background 0.3s ease, transform 0.2s ease;
+        }
+        .btn-ferrari:hover {
+            background-color: #b31a13; /* Rojo más oscuro al pasar el mouse */
+            transform: scale(1.05);
+            box-shadow: 0 5px 15px rgba(226, 35, 26, 0.4);
+            color: #ffffff;
+        }
     </style>
 </head>
 <body>
@@ -229,6 +261,16 @@
                 </tr>
             </tbody>
         </table>
+
+        <!-- SECCIÓN DE DESCARGA -->
+        <div class="seccion-descarga">
+            <h2>Descargar Documento</h2>
+            <p>Haz clic en el siguiente botón para descargar el archivo adjunto sobre este tema.</p>
+            <!-- Asegúrate de poner el nombre exacto de tu archivo en el atributo href -->
+            <a href="Reporte_Ferrari_F40.pdf" download="Datos_Ferrari_F40" class="btn-ferrari">
+                ⬇ Descargar Archivo
+            </a>
+        </div>
 
         <!-- NUEVA SECCIÓN DE IMÁGENES -->
         <h2>Galería del F40</h2>
